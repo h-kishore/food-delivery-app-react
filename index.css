@@ -5,7 +5,7 @@
   padding: 15px 30px;
   border-bottom: 2px solid #007bff;
   background-color: #ffffff;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .logo {
@@ -35,18 +35,24 @@
   background-color: #f0f0f0;
 }
 
-
 .search {
+  gap: 10px;
   padding: 20px 30px;
-  text-align: center;
+
 }
 
-.search input {
-  width: 60%;
-  padding: 10px;
+.search-box {
+  width: 20%;
+  padding: 8px;
   font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+}
+.search-button {
+  cursor: pointer;
+  margin: 5px;
+  padding: 5px;
+  background-color: #f0f0f0;
 }
 
 .restaurant-container {
@@ -83,4 +89,29 @@
   margin: 5px;
   padding: 5px;
   background-color: #f0f0f0;
+  align-items: center;
+}
+.shimmer-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 20px;
+}
+
+.shimmer-card {
+  width: 200px;
+  height: 250px;
+  background: linear-gradient(to right, #f0f0f0 0%, #e0e0e0 50%, #f0f0f0 100%);
+  background-size: 200% 100%;
+  animation: shimmer 1.2s infinite linear;
+  border-radius: 10px;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200px 0;
+  }
+  100% {
+    background-position: 200px 0;
+  }
 }
